@@ -27,7 +27,7 @@
   border-radius: 10px;
 }
 
-.content:hover::-webkit-scrollbar-thumb {
+.LandingPage .content:hover::-webkit-scrollbar-thumb {
   background: var(--light-grey);
 }
 
@@ -42,7 +42,6 @@
 html {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
-  background-color: var(--background-color);
 }
 
 a {
@@ -64,23 +63,24 @@ h2 {
   font-weight: normal;
 }
 
-.col-2 {
+.LandingPage .col-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   width: 100%;
 }
 
-.container {
+.LandingPage .container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  padding: 0;
 }
 
 /*=============== MENU ===============*/
 
-.menu {
+.LandingPage .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,22 +97,22 @@ h2 {
   padding: 15px 0;
 }
 
-.menu-icon {
+.LandingPage .menu-icon {
   font-size: 2rem;
   color: var(--light-grey);
   margin: 15px;
 }
 
-.menu-icon:hover {
+.LandingPage .menu-icon:hover {
   color: var(--accent-color);
 }
 
 /*=============== PORTFOLIO CONTAINER ===============*/
 
-.portfolio {
+.LandingPage .portfolio {
   display: flex;
-/* From https://css.glass */
-background: rgba(129, 117, 117, 0.2);
+/* From https://css.LandingPage .glass */
+background: rgba(129, 117, 117, 0.071);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(8.7px);
@@ -126,7 +126,7 @@ backdrop-filter: blur(8.7px);
 
 /*=============== HEADER ===============*/
 
-.header {
+.LandingPage .header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,7 +137,7 @@ backdrop-filter: blur(8.7px);
   overflow: auto;
 }
 
-.header-img {
+.LandingPage .header-img {
   width: 150px;
   height: auto;
   border-radius: 50%;
@@ -146,32 +146,32 @@ backdrop-filter: blur(8.7px);
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
-.header h1 {
+.LandingPage .header h1 {
   font-size: 2.5rem;
 }
 
-.header h2 {
+.LandingPage .header h2 {
   font-size: 1rem;
 }
 
-.socials {
+.LandingPage .socials {
   margin: 20px;
 }
 
-.socials a {
+.LandingPage .socials a {
   color: white;
   margin: 0 10px;
   transition: 0.2s linear;
   transition-property: background-color, color;
 }
 
-.socials a:hover {
+.LandingPage .socials a:hover {
   color: var(--accent-color);
   transition: 0.2s linear;
   transition-property: background-color, color;
 }
 
-.header .cta {
+.LandingPage .header .cta {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.274);
   padding: 10px 20px;
@@ -182,7 +182,7 @@ backdrop-filter: blur(8.7px);
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
-.header .cta:hover {
+.LandingPage .header .cta:hover {
   color: var(--accent-color);
   background-color: #fff;
   transition: 0.2s linear;
@@ -191,9 +191,8 @@ backdrop-filter: blur(8.7px);
 
 /*=============== CONTENT ===============*/
 
-.content {
-  border-radius: var(--border-radius);
-  /* From https://css.glass */
+.LandingPage .content {
+border-radius: var(--border-radius);
 background: rgba(255, 255, 255, 0.55);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -206,7 +205,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   scroll-behavior: smooth;
 }
 
-.content-card {
+.LandingPage .content-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -217,7 +216,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 /*=============== HOME SECTION ===============*/
 
-.home h1 {
+.LandingPage .home h1 {
   font-size: 3.5rem;
   font-weight: bolder;
   text-align: center;
@@ -227,25 +226,25 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 /*=============== ABOUT SECTION ===============*/
 
-.about {
+.LandingPage .about {
   display: flex;
   flex-direction: column;
 }
 
-.about-item {
+.LandingPage .about-item {
   width: 100%;
   margin: 0.5rem 0;
 }
 
-.language {
+.LandingPage .language {
   margin-bottom: 15px;
 }
 
-.language p {
+.LandingPage .language p {
   margin: 0;
 }
 
-.bar {
+.LandingPage .bar {
   background: rgba(0, 0, 0, 0.1);
   display: block;
   height: 8px;
@@ -253,25 +252,25 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   overflow: hidden;
 }
 
-.bar span {
+.LandingPage .bar span {
   height: 8px;
   float: left;
   background: var(--accent-color);
 }
 
-.polish {
+.LandingPage .polish {
   width: 100%;
 }
 
-.english {
+.LandingPage .english {
   width: 75%;
 }
 
-.french {
+.LandingPage .french {
   width: 50%;
 }
 
-.skill {
+.LandingPage .skill {
   background-color: var(--accent-color);
   color: #fff;
   line-height: 35px;
@@ -281,11 +280,11 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 /*=============== PROJECTS SECTION ===============*/
 
-.project-list {
+.LandingPage .project-list {
   margin: 20px 0;
 }
 
-.project-tile {
+.LandingPage .project-tile {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -299,7 +298,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
-.project-tile img {
+.LandingPage .project-tile img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -308,7 +307,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   filter: contrast(70%) brightness(110%) grayscale(20%);
 }
 
-.overlay {
+.LandingPage .overlay {
   background: #a8858fe0;
   display: flex;
   flex-direction: column;
@@ -320,7 +319,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   transition: 0.5s ease;
 }
 
-.project-description {
+.LandingPage .project-description {
   line-height: normal;
   max-width: 200px;
   margin: 20px;
@@ -329,13 +328,13 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   transition: 0.5s ease;
 }
 
-.project-tile:hover .overlay {
+.LandingPage .project-tile:hover .overlay {
   width: 100%;
   cursor: pointer;
   transition: 0.5s ease;
 }
 
-.project-tile:hover .project-description {
+.LandingPage .project-tile:hover .project-description {
   left: 0;
   cursor: pointer;
   transition: 0.5s ease;
@@ -343,11 +342,11 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 /*=============== EXPERIENCE SECTION ===============*/
 
-.timeline {
+.LandingPage .timeline {
   position: relative;
 }
 
-.timeline::before {
+.LandingPage .timeline::before {
   content: "";
   position: absolute;
   width: 2px;
@@ -357,11 +356,11 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 100;
 }
 
-.timeline-date {
+.LandingPage .timeline-date {
   position: relative;
 }
 
-.timeline-date::before {
+.LandingPage .timeline-date::before {
   content: "";
   position: absolute;
   background-color: var(--accent-color);
@@ -372,11 +371,11 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
 }
 
-.timeline-items {
+.LandingPage .timeline-items {
   margin-left: 20px;
 }
 
-.timeline-item {
+.LandingPage .timeline-item {
   margin: 50px 0;
 }
 
@@ -387,12 +386,12 @@ form {
   max-width: 600px;
 }
 
-.input-box {
+.LandingPage .input-box {
   display: flex;
   align-items: center;
 }
 
-.input-box input,
+.LandingPage .input-box input,
 textarea {
   width: 100%;
   margin: 1rem;
@@ -402,24 +401,24 @@ textarea {
   padding-left: 0.3rem;
 }
 
-.input-box input::placeholder,
+.LandingPage .input-box input::placeholder,
 textarea::placeholder {
   color: var(--accent-color);
   font-size: 1rem;
   padding-left: 0.3rem;
 }
 
-.input-box textarea::placeholder {
+.LandingPage .input-box textarea::placeholder {
   padding-top: 0.3rem;
 }
 
-.input-box input:focus,
+.LandingPage .input-box input:focus,
 textarea:focus {
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
-.text-input {
+.LandingPage .text-input {
   height: 2rem;
   background-color: transparent;
   border: none;
@@ -432,7 +431,7 @@ textarea {
   border-bottom: solid 2px var(--accent-color);
 }
 
-.submit-btn {
+.LandingPage .submit-btn {
   color: var(--accent-color);
   background-color: #fff;
   padding: 10px 20px;
@@ -444,7 +443,7 @@ textarea {
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
-.submit-btn:hover {
+.LandingPage .submit-btn:hover {
   color: #fff;
   background-color: var(--accent-color);
   transition: 0.2s linear;
@@ -458,26 +457,26 @@ textarea {
   html {
     scroll-behavior: smooth;
   }
-  .container {
+  .LandingPage .container {
     height: auto;
     flex-direction: column;
   }
-  .portfolio {
+  .LandingPage .portfolio {
     flex-direction: column;
     height: 100%;
     margin: 30px 0 100px;
   }
-  .content {
+  .LandingPage .content {
     padding-bottom: 100px;
   }
-  .header {
+  .LandingPage .header {
     width: 100%;
     height: 100%;
   }
-  .content-card {
+  .LandingPage .content-card {
     padding: 100px 0 0;
   }
-  .menu {
+  .LandingPage .menu {
     flex-direction: row;
     position: fixed;
     bottom: 15px;
@@ -487,11 +486,11 @@ textarea {
     border-radius: 50px;
     margin: 0;
   }
-  .menu-icon {
+  .LandingPage .menu-icon {
     font-size: 2rem;
     margin: 0 15px;
   }
-  .home h1 {
+  .LandingPage .home h1 {
     font-size: 3rem;
   }
 
@@ -510,11 +509,11 @@ textarea {
 }
 
 @media screen and (max-width: 750px) {
-  .col-2 {
+  .LandingPage .col-2 {
     grid-template-columns: 1fr;
   }
 }
-  .menu-icon {
+  .LandingPage .menu-icon {
     font-size: 1.5rem;
   }
 
@@ -523,18 +522,18 @@ textarea {
   }
 /*  error */
 @media screen and (max-width: 400px) {
-  .content-card {
+  .LandingPage .content-card {
     margin: 0 30px;
   }
-  .home h1 {
+  .LandingPage .home h1 {
     font-size: 2rem;
     line-height: 2.5rem;
   }
 }
 
-/* A little cheat to trick the freecodecamp certification test. It requires 
+/* A little cheat to trick the freecodecamp certification test.LandingPage . It requires 
 the navbar to be on top of the viewport, but I've already done that in previous 
-projects and I think in this one it looks more interesting on the side.
+projects and I think in this one it looks more interesting on the side.LandingPage .
 I hope the freecodecamp team won't be mad at me :) */
 #navbar {
   position: fixed;
@@ -546,7 +545,7 @@ I hope the freecodecamp team won't be mad at me :) */
 
 /* Rest of your CSS */
 
-.landing-page {
+.LandingPage .landing-page {
   position: relative;
 }
 
@@ -560,93 +559,3 @@ I hope the freecodecamp team won't be mad at me :) */
   display: flex;
   flex-direction: column;
 }
-
-/* Rest of your CSS */
-
-/* @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sumana:wght@700&display=swap");
-body {
-  align-items: center;
-  background-color: #f2f2f2;
-  display: flex;
-  font-family: "Merriweather", serif;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-}
-.person {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-}
-.container {
-  border-radius: 50%;
-  height: 312px;
-  -webkit-tap-highlight-color: transparent;
-  transform: scale(0.48);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 400px;
-}
-.container:after {
-  background-color: #f2f2f2;
-  content: "";
-  height: 10px;
-  position: absolute;
-  top: 390px;
-  width: 100%;
-}
-.container:hover {
-  transform: scale(0.54);
-}
-.container-inner {
-  clip-path: path(
-    "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
-  );
-  position: relative;
-  transform-origin: 50%;
-  top: -200px;
-}
-.circle {
-  background-color: #fee7d3;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 380px;
-  left: 10px;
-  pointer-events: none;
-  position: absolute;
-  top: 210px;
-  width: 380px;
-}
-.img {
-  pointer-events: none;
-  position: relative;
-  transform: translateY(20px) scale(1.15);
-  transform-origin: 50% bottom;
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.container:hover .img {
-  transform: translateY(0) scale(1.2);
-}
-.img1 {
-  left: 22px;
-  top: 164px;
-  width: 340px;
-}
-.img2 {
-  left: -46px;
-  top: 174px;
-  width: 444px;
-}
-.img3 {
-  left: -16px;
-  top: 144px;
-  width: 466px;
-}
-.divider {
-  background-color: #ca6060;
-  height: 1px;
-  width: 160px;
-}
-
- */

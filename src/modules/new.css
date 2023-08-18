@@ -1,0 +1,13 @@
+.about_me .divider {
+    background-color: #ca6060;
+    height: 1px;
+    width: 160px;
+    align-items: center;
+  }
+  .about_me .name {
+    color: #404245;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 16px;
+    text-align: center;
+  }
